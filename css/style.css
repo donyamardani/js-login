@@ -5,3 +5,40 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+form{
+    width: 50%;
+    margin: 50px auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: 0 0 20px 5px rgba(33, 148, 255, 0.4);
+
+}
+form input{
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 20px;
+    padding: 10px;
+    box-shadow: 0   0  10px  2px rgba(33, 148, 255, 0.4);
+}
+form button{
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(33, 148, 255, 0.4);
+    font-weight: 600;
+    color: rgb(80, 80, 80);
+}
+form h1{
+    color: rgba(7, 106, 199, 0.5);
+}
+.correct{
+    box-shadow: 0 0 10px 5px rgba(0, 221, 44, .2);
+}
+.incorrect{
+    box-shadow: 0 0 5px 5px rgba(221, 0, 44, .543);
+}

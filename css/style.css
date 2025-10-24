@@ -43,3 +43,13 @@ form h1{
 .incorrect{
     box-shadow: 0 0 5px 5px rgba(221, 0, 44, .4);
 }
+#password{
+    position: relative;
+}
+#icon{
+    position: absolute;
+    right:39%;
+    top: 50.5%;
+    font-size: 23px;
+    color: rgb(80, 80, 80);
+}

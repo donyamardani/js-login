@@ -2,6 +2,7 @@
 let phoneInp=document.querySelector('#PhoneNumber')
 let emailInp=document.querySelector('#email')
 let passInp=document.querySelector('#password')
+let iconEl=document.querySelector('#icon')
 let phoneRegex=/^\+?[1-9][0-9]{7,14}$/gm
 let emailRegex=/^\S+@\S+\.\S+$/gm
 let passwordRegex=/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/gm
@@ -39,3 +40,14 @@ passInp.addEventListener('change',()=>{
     }
 })
 
+iconEl.addEventListener('click',()=>{
+    if(iconEl.classList.contains('bx-show')){
+      iconEl.classList.remove('bx-show')
+      iconEl.classList.add('bx-hide')
+      passInp.setAttribute('type','text')
+    }else{
+     iconEl.classList.remove('bx-hide')
+     iconEl.classList.add('bx-show')
+     passInp.setAttribute('type','password')
+    }
+})
